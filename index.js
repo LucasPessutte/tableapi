@@ -7,7 +7,9 @@ const allowedOrigin = process.env.allowedOrigin;
 
 const app = express();
 
-app.use(cors({ origin: allowedOrigin }))
+app.use(cors({
+    origin: allowedOrigin
+}))
 
 app.use(bodyParser.json());
 
